@@ -1,7 +1,7 @@
 # FRUCD Telemetry Data Parser using DBC
 This application converts raw telem data files to CSV files with human-readable units and labels.
 
-To use, make sure this parse_dbc folder is inside the folder with all the raw telem data files! Folder structure should be as such:  
+To use, make sure this DBC parser folder is inside the folder with all the raw telem data files! Folder structure should be as such:  
 ```
 some_track_day_data_folder /  
     parser_dbc /
@@ -22,9 +22,10 @@ python parser_dbc.py [input_format_flag] [combine_files_flag]
 ```
 Replace `[input_format_flag]` with flag for the appropriate input file format:  
 - -s : SavvyCAN  
-- -r : Raspberry Pi  
-Replace `[combine_files_flag]` with:
-- -c : to combine all files in order of creation date (in the metadata)
+- -r : Raspberry Pi    
+
+Replace `[combine_files_flag]` with:  
+- -c : to combine all files in order of creation date (in the metadata)  
 - nothing, if you don't want to combine them 
 
 For example:  
